@@ -1,0 +1,18 @@
+$TTL 86400
+@   IN  SOA     fedora.local. root.fedora.local. (
+        2011071001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          fedora.local.
+@       IN  PTR         fedora.local.
+dns01           IN  A   192.168.56.5
+client          IN  A   192.168.56.6
+test		IN  A   192.168.56.7
+5     IN  PTR         dns01.fedora.local.
+6     IN  PTR         client.fedora.local.
+7     IN  PTR         enrurador1.fedora.local. 
+8     IN  PTR         snmp
+
